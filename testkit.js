@@ -39,8 +39,8 @@ class AutoButtonTestkit {
                 e.preventDefault(); 
                 const name = el.getAttribute('data-test-name') || el.innerText || el.value || 'Unknown Button';
                 this.log(`CLICK DETECTED: ${name}`);
-                
-                // Visual flash
+
+ // Visual flash
                 const originalBg = el.style.backgroundColor;
                 el.style.backgroundColor = '#ffffff';
                 setTimeout(() => el.style.backgroundColor = originalBg, 150);
